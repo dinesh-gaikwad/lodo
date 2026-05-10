@@ -162,3 +162,33 @@ LOGGING = {
 }
 
 print("Ludo Project Settings Loaded")
+
+
+import os
+
+ALLOWED_HOSTS = ["*"]
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+MIDDLEWARE.insert(
+    1,
+    'whitenoise.middleware.WhiteNoiseMiddleware'
+)
+
+STATICFILES_STORAGE = (
+    'whitenoise.storage.CompressedManifestStaticFilesStorage'
+)
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.up.railway.app"
+]
+
+
+import dj_database_url
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default='sqlite:///db.sqlite3',
+        conn_max_age=600
+    )
+}
