@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+
+    <link rel="stylesheet" href="{% static 'ludo/css/style.css">
+</head>
+<body>
+<div style="padding:15px;background:#111827;">
+<a href="/" style="color:white;text-decoration:none;font-size:18px;">⬅ Back To Dashboard</a>
+</div>
+
+<div class="container">
+
+    <h1 class="title">Leaderboard</h1>
+
+    <table border="1" cellpadding="15" cellspacing="0">
+
+        <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Wins</th>
+            <th>Score</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Dinesh</td>
+            <td>120</td>
+            <td>5000</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Alex</td>
+            <td>98</td>
+            <td>4200</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Sam</td>
+            <td>90</td>
+            <td>4000</td>
+        </tr>
+
+    </table>
+
+    <div style="margin-top:30px;">
+        <a href="/">
+            <button class="btn">Back Home</button>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

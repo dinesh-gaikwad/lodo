@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+
+    <link rel="stylesheet" href="{% static 'ludo/css/style.css">
+    <link rel="stylesheet" href="{% static 'ludo/css/game.css">
+    <link rel="stylesheet" href="{% static 'ludo/css/board.css">
+    <link rel="stylesheet" href="{% static 'ludo/css/animation.css">
+    <link rel="stylesheet" href="{% static 'ludo/css/responsive.css">
+</head>
+<body>
+<div style="padding:15px;background:#111827;">
+<a href="/" style="color:white;text-decoration:none;font-size:18px;">⬅ Back To Dashboard</a>
+</div>
+
+<div class="container">
+
+    <h1 class="title">Online Ludo Match</h1>
+
+    <div class="game-wrapper">
+
+        <div class="player-panel">
+
+            <h2>Player 1</h2>
+
+            <p>Color: Red</p>
+
+            <p>Status: Online</p>
+
+            <div class="dice-area">
+                <img
+                    id="dice"
+                    class="dice"
+                    src="{% static 'ludo/images/dice/1.png"
+                >
+            </div>
+
+            <div class="turn-indicator" id="turn-player">
+                Player 1 Turn
+            </div>
+
+        </div>
+
+        <div class="ludo-board"></div>
+
+        <div class="player-panel">
+
+            <h2>Player 2</h2>
+
+            <p>Color: Blue</p>
+
+            <p>Status: Online</p>
+
+            <div style="margin-top:20px;">
+                <img
+                    src="{% static 'ludo/images/tokens/blue.png"
+                    width="60"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="margin-top:40px; text-align:center;">
+
+        <button class="btn" onclick="rollDice()">
+            Roll Dice
+        </button>
+
+        <button class="btn" onclick="botPlay()">
+            Bot Play
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{% static 'ludo/js/player.js"></script>
+<script src="{% static 'ludo/js/animation.js"></script>
+<script src="{% static 'ludo/js/dice.js"></script>
+<script src="{% static 'ludo/js/game.js"></script>
+<script src="{% static 'ludo/js/ui.js"></script>
+<script src="{% static 'ludo/js/socket.js"></script>
+<script src="{% static 'ludo/js/bot.js"></script>
+<script src="{% static 'ludo/js/main.js"></script>
+
+</body>
+</html>

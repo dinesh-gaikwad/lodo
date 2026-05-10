@@ -1,0 +1,48 @@
+:root{
+    --primary:#2563eb;
+    --secondary:#111827;
+    --success:#22c55e;
+    --danger:#ef4444;
+    --warning:#facc15;
+    --light:#f3f4f6;
+    --dark:#0f172a;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:var(--secondary);
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.flex{
+    display:flex;
+}
+
+.center{
+    justify-content:center;
+    align-items:center;
+}
+
+.shadow{
+    box-shadow:0 0 15px rgba(255,255,255,0.1);
+}
+
+.rounded{
+    border-radius:12px;
+}
+
+.hidden{
+    display:none;
+}

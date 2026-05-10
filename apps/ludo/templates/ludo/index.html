@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game Home</title>
+
+    <link rel="stylesheet" href="{% static 'ludo/css/style.css">
+    <link rel="stylesheet" href="{% static 'ludo/css/responsive.css">
+</head>
+<body>
+<div style="padding:15px;background:#111827;">
+<a href="/" style="color:white;text-decoration:none;font-size:18px;">⬅ Back To Dashboard</a>
+</div>
+
+<div class="container">
+
+    <h1 class="title">LUDO MASTER</h1>
+
+    <img src="{% static 'ludo/images/board.png" width="400">
+
+    <div style="margin-top:30px;">
+        <a href="/game/">
+            <button class="btn">Start Game</button>
+        </a>
+
+        <a href="/room/">
+            <button class="btn">Join Room</button>
+        </a>
+
+        <a href="/leaderboard/">
+            <button class="btn">Leaderboard</button>
+        </a>
+    </div>
+
+    <section style="margin-top:50px; width:80%; text-align:center;">
+        <h2>About Game</h2>
+
+        <p>
+            Multiplayer Ludo Game using Django, HTML, CSS, JS and WebSocket.
+        </p>
+
+        <p>
+            Real time gameplay with dice animations, bot system,
+            online rooms, leaderboard and smooth UI.
+        </p>
+
+        <p>
+            Features:
+        </p>
+
+        <ul style="list-style:none;">
+            <li>✔ Online Multiplayer</li>
+            <li>✔ AI Bot</li>
+            <li>✔ Dice Animation</li>
+            <li>✔ Realtime Socket</li>
+            <li>✔ Leaderboard</li>
+            <li>✔ Responsive Design</li>
+        </ul>
+    </section>
+
+</div>
+
+<script src="{% static 'ludo/js/main.js"></script>
+
+</body>
+</html>

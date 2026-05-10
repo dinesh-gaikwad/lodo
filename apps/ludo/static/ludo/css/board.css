@@ -1,0 +1,61 @@
+.ludo-board{
+    width:700px;
+    height:700px;
+    display:grid;
+    grid-template-columns:repeat(15,1fr);
+    grid-template-rows:repeat(15,1fr);
+    border:8px solid #000;
+    background:white;
+}
+
+.cell{
+    border:1px solid #d1d5db;
+    position:relative;
+}
+
+.red-home{
+    background:#ef4444;
+}
+
+.green-home{
+    background:#22c55e;
+}
+
+.yellow-home{
+    background:#facc15;
+}
+
+.blue-home{
+    background:#3b82f6;
+}
+
+.safe-zone{
+    background:#d1fae5;
+}
+
+.token{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    cursor:pointer;
+}
+
+.red-token{
+    background:red;
+}
+
+.green-token{
+    background:green;
+}
+
+.yellow-token{
+    background:yellow;
+}
+
+.blue-token{
+    background:blue;
+}

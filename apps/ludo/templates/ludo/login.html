@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{% static 'ludo/css/style.css">
+</head>
+<body>
+<div style="padding:15px;background:#111827;">
+<a href="/" style="color:white;text-decoration:none;font-size:18px;">⬅ Back To Dashboard</a>
+</div>
+
+<div class="container">
+
+    <h1 class="title">Player Login</h1>
+
+    <form style="width:350px;">
+
+        <div style="margin-bottom:20px;">
+            <label>Email</label>
+            <input
+                type="email"
+                placeholder="Enter Email"
+                style="width:100%; padding:12px;"
+            >
+        </div>
+
+        <div style="margin-bottom:20px;">
+            <label>Password</label>
+            <input
+                type="password"
+                placeholder="Enter Password"
+                style="width:100%; padding:12px;"
+            >
+        </div>
+
+        <button class="btn" type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <div style="margin-top:20px;">
+        <a href="/register/">Create Account</a>
+    </div>
+
+</div>
+
+</body>
+</html>

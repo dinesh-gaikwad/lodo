@@ -1,0 +1,32 @@
+@media(max-width:1200px){
+    .ludo-board{
+        width:600px;
+        height:600px;
+    }
+}
+
+@media(max-width:900px){
+    .game-wrapper{
+        flex-direction:column;
+    }
+
+    .ludo-board{
+        width:500px;
+        height:500px;
+    }
+}
+
+@media(max-width:600px){
+    .ludo-board{
+        width:350px;
+        height:350px;
+    }
+
+    .player-panel{
+        width:90%;
+    }
+
+    .title{
+        font-size:28px;
+    }
+}

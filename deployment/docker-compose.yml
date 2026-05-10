@@ -1,0 +1,50 @@
+version: '3.9'
+
+services:
+
+  web:
+    build: .
+    container_name: ludo_web
+
+    command: >
+      sh -c "
+      python manage.py migrate &&
+      daphne -b 0.0.0.0 -p 8000 config.asgi:application
+      "
+
+    volumes:
+      - .:/app
+
+    ports:
+      - "8000:8000"
+
+    depends_on:
+      - redis
+
+    environment:
+      - DEBUG=True
+      - DJANGO_SETTINGS_MODULE=config.settings
+
+  redis:
+    image: redis:7
+    container_name: ludo_redis
+
+    ports:
+      - "6379:6379"
+
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    container_name: ludo_nginx
+
+    ports:
+      - "80:80"
+
+    volumes:
+      - ./deployment/nginx.conf:/etc/nginx/nginx.conf
+
+    depends_on:
+      - web
+
+restart: always

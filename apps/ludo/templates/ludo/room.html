@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Room</title>
+
+    <link rel="stylesheet" href="{% static 'ludo/css/style.css">
+</head>
+<body>
+<div style="padding:15px;background:#111827;">
+<a href="/" style="color:white;text-decoration:none;font-size:18px;">⬅ Back To Dashboard</a>
+</div>
+
+<div class="container">
+
+    <h1 class="title">Multiplayer Room</h1>
+
+    <div style="background:#1f2937; padding:30px; border-radius:15px; width:500px;">
+
+        <h2>Room Details</h2>
+
+        <p>Room ID: ROOM123</p>
+
+        <p>Players Joined: 2 / 4</p>
+
+        <p>Status: Waiting...</p>
+
+        <div style="margin-top:20px;">
+
+            <button class="btn">
+                Join Match
+            </button>
+
+            <button class="btn">
+                Create New Room
+            </button>
+
+        </div>
+
+    </div>
+
+    <section style="margin-top:40px; width:70%; text-align:center;">
+
+        <h2>Connected Players</h2>
+
+        <ul style="list-style:none;">
+
+            <li>🟢 Dinesh</li>
+            <li>🟢 Alex</li>
+            <li>🔴 Waiting...</li>
+            <li>🔴 Waiting...</li>
+
+        </ul>
+
+    </section>
+
+</div>
+
+<script src="{% static 'ludo/js/socket.js"></script>
+
+</body>
+</html>

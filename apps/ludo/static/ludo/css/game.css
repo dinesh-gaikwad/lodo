@@ -1,0 +1,37 @@
+.game-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.player-panel{
+    width:220px;
+    background:#1f2937;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(255,255,255,0.1);
+}
+
+.player-panel h2{
+    margin-bottom:15px;
+}
+
+.dice-area{
+    margin-top:20px;
+    text-align:center;
+}
+
+.dice{
+    width:80px;
+    height:80px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.turn-indicator{
+    margin-top:10px;
+    font-size:20px;
+    color:#22c55e;
+}
